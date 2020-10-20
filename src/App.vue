@@ -1,6 +1,13 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-10-20 16:06:43
+ * @LastEditTime: 2020-10-20 16:25:54
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \music\src\App.vue
+-->
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
   </div>
 </template>
