@@ -1,30 +1,27 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-20 16:06:43
- * @LastEditTime: 2020-10-20 16:25:54
+ * @LastEditTime: 2020-10-20 20:48:33
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\src\App.vue
 -->
 <template>
   <div id="app">
+    <m-header></m-header>
     <router-view/>
   </div>
 </template>
 
 <script>
+import MHeader from '@/components/m-header/m-header'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    MHeader
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="less" scoped>
 </style>

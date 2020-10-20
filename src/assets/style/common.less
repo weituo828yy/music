@@ -1,0 +1,182 @@
+/** 
+ * less comment 
+ * @Author: qinzhang6 
+ * @Date: 2019-11-29 10:18:24 
+ * @Desc: 公共常用样式 
+ */
+
+ body,
+ div,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ hr,
+ p,
+ dl,
+ dt,
+ dd,
+ ul,
+ ol,
+ li,
+ th,
+ td{
+   margin: 0;
+   padding: 0;
+   word-break:break-all;
+   box-sizing: border-box;
+ }
+ 
+ input, textarea, select,button {
+   outline: none;
+ }
+ ul {
+   list-style: none;
+ }
+ a {
+   text-decoration: none;
+   color: #333;
+ }
+ a:hover {
+   text-decoration: none;
+ }
+ a:active,
+ a:hover {
+   outline: none;
+ }
+ 
+ table {
+   min-width: 100%;
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+ 
+ .fl {
+   float: left;
+ }
+ .fr {
+   float: right;
+ }
+ .f-df{
+   display: flex;
+ }
+ .clearfix {
+   *zoom: 1;
+   &:after {
+     content: "";
+     display: block;
+     height: 0;
+     clear: both;
+   }
+ }
+ 
+ /* CSS for manage text typography */
+ .mt10{
+   margin-top:10px;
+ }
+ .ml10{
+   margin-left:10px;
+ }
+ .mr10{
+   margin-right:10px;
+ }
+ .mb10{
+   margin-bottom:10px;
+ }
+ .mt20{
+   margin-top:20px;
+ }
+ .ml20{
+   margin-left:20px;
+ }
+ .mr20{
+   margin-right:20px;
+ }
+ .mb20{
+   margin-bottom:20px;
+ }
+ .tal {
+   text-align: left;
+ }
+ .tar {
+   text-align: right;
+ }
+ .tac {
+   text-align: center;
+ }
+ 
+ .hide {
+   display: none;
+ }
+ .show {
+   display: block;
+ }
+ .hidden {
+   visibility: hidden;
+ }
+ .visible {
+   visibility: visible;
+ }
+ .pointer {
+   cursor: pointer;
+ }
+ .nowarp{
+   white-space:nowrap;
+   word-break:normal;
+ }
+ /*单行截断*/
+ .ellipsis{
+   overflow:hidden;
+   text-overflow: ellipsis;
+   white-space:nowrap;
+ }
+ /*防止双击选中文字*/
+ .noselect{
+   -moz-user-select: none;
+   -o-user-select:none;
+   -khtml-user-select:none;
+   -webkit-user-select:none;
+   -ms-user-select:none;
+   user-select:none;
+ }
+ 
+ //使用scrollbar组件时应用u-scroll样式
+ .u-scroll{
+   .el-scrollbar__thumb{
+     background-color: #B5C5FB;
+   }
+   &.z-horizontal{
+     & > .el-scrollbar__wrap{
+       overflow: scroll;
+       overflow-y: auto;
+     }
+   }
+   &.z-vertical{
+     & > .el-scrollbar__wrap{
+       overflow: scroll;
+       overflow-x: auto;
+     }
+   }
+ } 
+ .m-warpper{
+   padding: 40px;
+   &>h1{
+     font-size: 20px;
+     margin-bottom: 40px;
+   }
+ }
+ .m-temp{
+   text-align-last: left;
+   h2{
+     font-size: 16px;
+     margin: 20px 0;
+   }
+   .content{
+     background-color: #dcedff;
+     padding: 20px;
+     box-shadow:0px 2px 7px 0px rgba(147,159,232,0.14);
+   }
+ }
+ 
